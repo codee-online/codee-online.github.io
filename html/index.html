@@ -1,1 +1,527 @@
-Hello World
+<html>
+
+<head>
+  <title>Codee HTML Layout</title>
+  <link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre.min.css">
+<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-exp.min.css">
+<link rel="stylesheet" href="https://unpkg.com/spectre.css/dist/spectre-icons.min.css">
+
+  <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+<!-- 1.Left sidebar open/close -->
+  <div class="sidebar"></div>
+  
+ 
+  
+<!-- 2. header with logo / search / login  -->
+    <header class="flex flex-middle flex-between container c-hand">
+
+    <div class="flex flex-middle">
+      <div class="sm-only mr-2">
+        <i class="icon icon-menu"></i>
+      </div>
+      <div><img src="https://shop.tomhumbetom.com/images/logo.png" class="logo"></div>
+    </div>
+    
+    <div></div>
+    
+    <div class="header-search md-only">
+      <div class="input-group">
+        <input type="text" class="form-input"/>
+        <button class="btn btn-primary">
+          <i class="icon icon-search"></i>
+        </button>
+      </div>
+    </div>
+    
+    <div></div>
+    
+    <div class="header-phone flex flex-middle md-only">
+      <div class="mr-2">
+        <img src="https://pbs.twimg.com/media/EhZ326hU0AA3bhw.png" class="icon-lg s-circle"/>
+      </div>
+      <div>
+        <span><b>0903 123 456</b></span><br>
+        <small>Hotline 8:00-17:30</small>
+      </div>
+    </div>
+    
+    <div class="header-account md-only">
+     
+      
+      <div class="popover popover-bottom">
+        <div class="flex flex-middle">
+           <div class="mr-2">
+            <img src="https://simg.nicepng.com/png/small/138-1388174_login-account-icon.png" class="icon-lg s-circle"/>
+          </div>
+          <div>
+            <b>Tài khoản</b><br>
+            <small>Đăng nhập</small>
+          </div>
+        </div>
+        <div class="popover-container">
+            <ul class="menu text-small">
+              <li class="menu-item">
+                <a>Đăng nhập</a>
+              </li>
+              <li class="menu-item">
+                <a>Đăng ký</a>
+              </li>
+              <li class="menu-item">
+                <a>Hồ sơ</a>
+              </li>
+              <li class="menu-item">
+                <a>Đơn hàng</a>
+              </li>
+              <li class="menu-item">
+                <a>Yêu cầu</a>
+              </li>
+              <li class="menu-item">
+                <a>Đăng xuất</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+
+    </div>
+   
+    <div class="header-cart">
+      <div class="cart-icon">
+        <i class="ri-shopping-cart-line"></i>
+        <span class="cart-count">2</span>
+      </div>
+     
+    </div>
+   
+  </header>
+  
+<!--   2.2 tricks the search on mobile  -->
+  <div class="header-search container sm-only">
+    <div class="input-group">
+      <input type="text" class="form-input"/>
+      <button class="btn btn-primary">
+        <i class="icon icon-search"></i>
+      </button>
+    </div>
+  </div>
+  
+  
+  
+<!-- 2. nav main menu  -->
+  <nav class="flex flex-middle flex-center container md-only c-hand">
+    <div class="nav-item"><a>Trang chủ</a></div>
+    <div class="nav-item"><a>Giới thiệu</a></div>
+    <div class="nav-item"><a>Sản phẩm</a></div>
+    <div class="nav-item"><a>Bài viết</a></div>
+    <div class="nav-item"><a>Liên hệ</a></div>
+  </nav>
+ 
+<!--   4. main content  -->
+  <main class="container py-2">
+ 
+
+     <section class="columns col-gapless c-hand md-only">
+      <div class="column col-3 md-only">
+        <div class="category-menu bordered">
+          <div>Danh mục</div>
+          <div><a>Menu 1</a></div>
+          <div><a>Menu 2</a></div>
+          <div><a>Menu ...</a></div>
+        </div>
+      </div>
+      <div class="column col-9 col-sm-12">
+        <div class="slider">
+<!--           3 hinh tren  -->
+          <div class="columns">
+            <div class="column col-8 col-sm-12">
+              <img src="https://picsum.photos/1480" class="img1">
+            </div>
+            <div class="column col-4 col-sm-12 md-only">
+              <img src="https://picsum.photos/1480" class="img2">
+              <img src="https://picsum.photos/1480" class="img2">
+            </div>
+          </div>
+          
+<!--           2 hinh duoi  -->
+           <div class="columns md-only">
+            <div class="column col-6 col-sm-12">
+              <img src="https://picsum.photos/1480" class="img3">
+            </div>
+            <div class="column col-6 col-sm-12">
+              <img src="https://picsum.photos/1480" class="img3">
+            </div>
+          </div>
+         </div>
+      </div>
+    </section>
+    
+    <!-- trick slider -->
+    <section class="sm-only">
+      <img src="https://picsum.photos/1480" class="img-responsive">
+    </section>
+    
+     <section class="main-category flex bordered">
+      <div class="item">
+        <div class="img-category">
+          <img src="https://picsum.photos/480">
+        </div>
+        <b>Category 1</b>
+      </div>
+      
+      <div class="item">
+        <div class="img-category">
+          <img src="https://picsum.photos/480">
+        </div>
+        <b>Category 2</b>
+      </div>
+      
+       <div class="item">
+        <div class="img-category">
+          <img src="https://picsum.photos/480">
+        </div>
+        <b>Category 3</b>
+      </div>
+      
+       <div class="item">
+        <div class="img-category">
+          <img src="https://picsum.photos/480">
+        </div>
+        <b>Category 4</b>
+      </div>
+      
+       <div class="item">
+        <div class="img-category">
+          <img src="https://picsum.photos/480">
+        </div>
+        <b>Category 5</b>
+      </div>
+      
+       <div class="item">
+        <div class="img-category">
+          <img src="https://picsum.photos/480">
+        </div>
+        <b>Category 6</b>
+      </div>
+      
+       <div class="item">
+        <div class="img-category">
+          <img src="https://picsum.photos/480">
+        </div>
+        <b>Category 7</b>
+      </div>
+      
+       <div class="item">
+        <div class="img-category">
+          <img src="https://picsum.photos/480">
+        </div>
+        <b>Category ...</b>
+      </div>
+      
+      
+    </section>
+    
+       <section class="products">
+<!--       heading title  -->
+      <div class="flex flex-between flex-middle bordered-bottom">
+        <div class="heading">
+          <h2>Featured Products</h2>
+        </div>
+        <div>View all <i class="ri-external-link-line ml-2"></i></div>
+      </div>
+      
+<!--       product-cards  -->
+      <div class="columns mt-2">
+       
+        <div class="column col-sm-6">
+          <div class="product-card">
+            <img src="https://picsum.photos/1400" class="img-responsive" />
+            <div class="info">
+              <h3 class="ellipsis">Product name</h3>
+              <div class="...">
+                <span class="price">1.200.000đ</span>
+                <s class="retail_price">1.500.000đ</s>
+                <span class="discount">10%</span>
+              </div>
+              <button class="btn btn-primary my-2">View detail</button>
+            </div>
+          </div>
+        </div>
+        
+          <div class="column col-sm-6">
+          <div class="product-card">
+            <img src="https://picsum.photos/1400" class="img-responsive" />
+            <div class="info">
+              <h3 class="ellipsis">Product name</h3>
+              <div class="...">
+                <span class="price">1.200.000đ</span>
+                <s class="retail_price">1.500.000đ</s>
+                <span class="discount">10%</span>
+              </div>
+              <button class="btn btn-primary my-2">Add To Cart</button>
+            </div>
+          </div>
+        </div>
+        
+          <div class="column col-sm-6">
+          <div class="product-card">
+            <img src="https://picsum.photos/1400" class="img-responsive" />
+            <div class="info">
+              <h3 class="ellipsis">Product name</h3>
+              <div class="...">
+                <span class="price">1.200.000đ</span>
+                <s class="retail_price">1.500.000đ</s>
+                <span class="discount">10%</span>
+              </div>
+              <button class="btn btn-primary my-2">Add To Cart</button>
+            </div>
+          </div>
+        </div>
+        
+          <div class="column  col-sm-6">
+          <div class="product-card">
+            <img src="https://picsum.photos/1400" class="img-responsive" />
+            <div class="info">
+              <h3 class="ellipsis">Product name</h3>
+              <div class="...">
+                <span class="price">1.200.000đ</span>
+                <s class="retail_price">1.500.000đ</s>
+                <span class="discount">10%</span>
+              </div>
+              <button class="btn btn-primary my-2">Add To Cart</button>
+            </div>
+          </div>
+        </div>
+        
+          <div class="column  col-sm-6">
+          <div class="product-card">
+            <img src="https://picsum.photos/1400" class="img-responsive" />
+            <div class="info">
+              <h3 class="ellipsis">Product name</h3>
+              <div class="...">
+                <span class="price">1.200.000đ</span>
+                <s class="retail_price">1.500.000đ</s>
+                <span class="discount">10%</span>
+              </div>
+              <button class="btn btn-primary my-2">Add To Cart</button>
+            </div>
+          </div>
+        </div>
+        
+       
+        
+        
+      </div>
+    </section>
+  
+    <section class="posts md-only">
+<!--       heading title  -->
+      <div class="flex flex-between flex-middle bordered-bottom">
+        <div class="heading">
+          <h2>Featured Posts</h2>
+        </div>
+        <div>View all <i class="ri-external-link-line ml-2"></i></div>
+      </div>
+      
+<!--       post-cards  -->
+      <div class="columns mt-2">
+       
+        <div class="column col-sm-6">
+          <article class="post-card">
+            <img src="https://picsum.photos/1400" class="img-responsive" />
+            <div class="info">
+              <h3 class="ellipsis">Article title</h3>
+              <div class="text-small text-muted ellipis-2">
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+              </div>
+              <button class="btn btn-primary my-2">View detail</button>
+            </div>
+          </article>
+        </div>
+        
+        <div class="column col-sm-6">
+          <article class="post-card">
+            <img src="https://picsum.photos/1400" class="img-responsive" />
+            <div class="info">
+              <h3 class="ellipsis">Article title</h3>
+              <div class="text-small text-muted ellipis-2">
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+              </div>
+              <button class="btn btn-primary my-2">View detail</button>
+            </div>
+          </article>
+        </div>
+        
+        <div class="column col-sm-6">
+          <article class="post-card">
+            <img src="https://picsum.photos/1400" class="img-responsive" />
+            <div class="info">
+              <h3 class="ellipsis">Article title</h3>
+              <div class="text-small text-muted ellipis-2">
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+              </div>
+              <button class="btn btn-primary my-2">View detail</button>
+            </div>
+          </article>
+        </div>
+        
+        <div class="column col-sm-6">
+          <article class="post-card">
+            <img src="https://picsum.photos/1400" class="img-responsive" />
+            <div class="info">
+              <h3 class="ellipsis">Article title</h3>
+              <div class="text-small text-muted ellipis-2">
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+              </div>
+              <button class="btn btn-primary my-2">View detail</button>
+            </div>
+          </article>
+        </div>
+        
+      </div>
+    </section>
+    
+    
+    
+<!--     sections 2  -->
+    
+    <section class="posts sm-only">
+<!--       heading title  -->
+      <div class="flex flex-between flex-middle bordered-bottom">
+        <div class="heading">
+          <h2>Featured Posts</h2>
+        </div>
+        <div>View all <i class="ri-external-link-line ml-2"></i></div>
+      </div>
+      
+<!--       post-cards  -->
+       <div class="mt-2">
+         
+          <article class="post-card flex flex-middle bordered">
+            <img src="https://picsum.photos/1400" />
+            <div class="info">
+              <h3 class="ellipsis">Article title</h3>
+              <div class="text-small text-muted ellipis-2">
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+              </div>
+              <button class="btn btn-primary my-2">View detail</button>
+            </div>
+          </article>
+         
+          <article class="post-card flex flex-middle bordered">
+            <img src="https://picsum.photos/1400" />
+            <div class="info">
+              <h3 class="ellipsis">Article title</h3>
+              <div class="text-small text-muted ellipis-2">
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+              </div>
+              <button class="btn btn-primary my-2">View detail</button>
+            </div>
+          </article>
+         
+          <article class="post-card flex flex-middle bordered">
+            <img src="https://picsum.photos/1400" />
+            <div class="info">
+              <h3 class="ellipsis">Article title</h3>
+              <div class="text-small text-muted ellipis-2">
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+              </div>
+              <button class="btn btn-primary my-2">View detail</button>
+            </div>
+          </article>
+         
+          <article class="post-card flex flex-middle bordered">
+            <img src="https://picsum.photos/1400" />
+            <div class="info">
+              <h3 class="ellipsis">Article title</h3>
+              <div class="text-small text-muted ellipis-2">
+                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum 
+              </div>
+              <button class="btn btn-primary my-2">View detail</button>
+            </div>
+          </article>
+        
+        
+         
+         </div>
+        
+      </div>
+    </section>
+    <!------------------------------------------- 
+// WE CODE END 1.8 Posts      
+//------------------------------------------->   
+    
+  </main>
+  
+<!-- footer  -->
+    <footer class="container">
+    <div class="columns">
+      <div class="column col-3 col-sm-12">
+        <h3>Giới thiệu Shop</h3>
+        <div>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </div>
+        <div class="my-2"><b>Liên hệ</b></div>
+        <div><i class="ri-phone-line mr-2"></i> Hotline: 0903 123 456</div>
+        <div><i class="ri-cellphone-line mr-2"></i> Kinh doanh: 0903 123 456</div>
+        <div><i class="ri-headphone-line mr-2"></i> Hành chính: 0903 123 456</div>
+      </div>
+      <div class="column col-3 col-sm-12">
+         <h3>Chính sách</h3>
+         <div><i class="ri-shield-line mr-2"></i> Chính sách bán hàng</div>
+         <div><i class="ri-shield-line mr-2"></i> Chính sách bảo mật</div>
+         <div><i class="ri-shield-line mr-2"></i> Chính sách đổi trả</div>
+         <div><i class="ri-shield-line mr-2"></i> Chính sách vận chuyển</div>
+      </div>
+      <div class="column col-3 col-sm-12">
+        <h3>Tìm hiểu thêm</h3>
+        <div><i class="ri-edit-circle-line mr-2"></i> Giới thiệu</div>
+        <div><i class="ri-edit-circle-line mr-2"></i> Tin tức</div>
+        <div><i class="ri-edit-circle-line mr-2"></i> Sản phẩm</div>
+        <div><i class="ri-edit-circle-line mr-2"></i> Hệ thống cửa hàng</div>
+      </div>
+     <div class="column col-3 col-sm-12">
+        <h3>Liên kết</h3>
+        <div>Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum </div>
+        <div>
+<!--           hinh da thong bao Bo Cong Thuong  -->
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div class="footer-bottom text-small">
+    Copyright by 2022 . Company ABC. Địa chỉ: .... GPDKKD số: .... Phone: .... Email: ..... Chịu trách nhiệm nội dung: ..... 
+  </div>
+  
+
+  <div class="navigationTab sm-only">
+    <div class="flex flex-between content">
+    <div class="">
+      <i class="ri-home-8-line"></i><br>
+      Trang chủ
+    </div>
+    <div class="">
+      <i class="ri-product-hunt-line"></i><br>
+      Sản phẩm
+    </div>
+    <div class="">
+      <i class="ri-newspaper-line"></i><br>
+      Tin tức 
+    </div>
+    <div class="">
+      <i class="ri-shopping-cart-line"></i><br>
+      Giỏ hàng
+    </div>
+    <div class="">
+      <i class="ri-account-circle-line"></i><br>
+      Tài khoản
+    </div>
+      </div>
+  
+  </div>
+ 
+  
+  
+  
+</body>
+  
+</html>
