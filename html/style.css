@@ -114,7 +114,7 @@ footer h3 { letter-spacing: 1px }
 
 
 
-@media (max-width:400px){
+@media (max-width:480px){
   .container {padding-left:10px; padding-right:10px; }
   .sm-only {display:grid;}
   .md-only {display:none;}
