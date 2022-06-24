@@ -1,0 +1,148 @@
+:root {
+  --primary: #880000;
+  --primary-darker: #641E16;
+  --primary-lighter: #CD6155; 
+}
+
+* {}
+body {}
+
+h2 {font-size: 1.1rem}
+h3 {font-size: 1rem;}
+.bordered { border: solid 1px #ddd;}
+.bordered-bottom { border-bottom: solid 1px #ddd;}
+
+.container { padding-left:10vw; padding-right:10vw;}
+.flex {display:flex} 
+.flex-middle { align-items: center} /* vertical */
+.flex-between { justify-content: space-between} /* horizontal */
+.flex-center { justify-content: center} /* horizontal */
+.flex-grow { flex:1;} /* auto full width*/
+
+.sm-only {display:none;}
+.md-only {display:auto;}
+
+.sidebar {display: none;}
+
+header {height: 10vh;background-color: #fff;}
+nav { background-color:#f8f8f8;}
+main {min-height: 75vh;background-color: #eee;}
+footer {min-height: 10vh;background-color: #ccc;}
+
+/* 1.1 header */
+header img.logo {max-height:90px}
+header img.icon-lg {max-height:48px}
+header .cart-icon { position: relative; padding:10px;}
+header .cart-icon i {font-size: 240%}
+header .cart-count { position: absolute; top: 14px; right: 0px; background-color: red; color:#fff; padding: 2px; text-align:center; width:20px; border-radius: 10px; font-size: 10px}
+/* 1.2 nav */
+nav { text-transform: uppercase; letter-spacing: 1px; }
+nav .nav-item { padding-left:20px; padding-right:20px; padding-top: 5px; padding-bottom: 5px;}
+nav .nav-item a {text-decoration: none; color:#333;} 
+nav .nav-item:hover { background-color:#880000;}
+nav .nav-item:hover a { color: #fff; }
+
+/* 1.3 Footer */
+footer {font-size: 90%; background-color: var(--primary-darker); color: #ddd; padding-top: 20px; padding-bottom:20px}
+footer h3 { letter-spacing: 1px }
+.footer-bottom { font-size: 90%; background-color: #111; color: #ccc; text-align: center; padding-top:5px; padding-bottom: 5px}
+
+/* 1.4 bottom nav tav in mobile */
+.navigationTab {} 
+
+/* 1.5 category menu & Slider */
+.category-menu {height: 45vh; background-color:#fff;}
+.category-menu a  {text-decoration:none; color:#333;}
+.category-menu > div { font-size: 90%; border-bottom: solid 1px #ddd; padding: 5px;}
+.category-menu > div:last-child { border-bottom: none;} /* trick the last */
+.category-menu > div:first-child { border-bottom: none; background-color:var(--primary); color:#fff; text-transform:uppercase; font-weight:500; letter-spacing: 1.6px} /* trick the first */
+.category-menu > div:hover { background-color:var(--primary-lighter); color:#fff;}
+.category-menu > div:hover a {text-decoration:none; color:#fff;}
+
+.slider {padding-left: 5px; padding-right: 5px;}
+.slider img {object-fit:cover;width:100%; border-radius: 5px;}
+.slider img.img1 {height:30vh;}
+.slider img.img2 {height:14.75vh;} /* trick chinh xac */
+.slider img.img3 {height:14.25vh;} /* trick chinh xac */
+
+/* 1.6 Main Category  */
+/* https://ishadeed.com/article/custom-scrollbars-css/ */
+.main-category { overflow-x: scroll; padding-bottom: 20px; margin-top: 40px}
+.main-category img {object-fit:cover;width:100%; border-radius: 20px;}
+/* .main-category img {object-fit:cover;width:100%; border-radius: 50%;} /* hinh tron */
+.main-category .item { margin-right: 40px; text-align:center; 
+   flex-grow: 0;
+   flex-shrink: 0;
+   flex-basis: 12.33%;} /* trick so le de hien thi che bot*/
+.main-category .item b { font-size: 90%; letter-spacing: -0.5px}
+
+/* 1.7 Product section with heading  */
+/* trick su dung flex de co width */
+.products { margin-top: 40px}
+.products .heading { background-color: var(--primary); color:#fff; padding: 15px; transform: skewx(10deg);}
+.products .heading h2 {transform:skewx(-10deg)} 
+.products .product-card { height:30vh; background-color:#fff; transition: all .2s ease-in-out;
+   flex-grow: 0;
+   flex-shrink: 0;
+   flex-basis: 20%;} /* hien thi 5 san pham */
+.products .product-card img {object-fit:cover;width:100%; height:66%} /* set height to hover zoom*/
+.products .product-card:hover { margin-top: -10px} /* with animation above */
+
+.product-card .info {padding: 5px}
+.product-card .info h3 { font-size: 95%;}
+.product-card .info .price { font-size: 90%; color:var(--primary); font-weight:500}
+.product-card .info .retail_price { font-size: 60%;}
+.product-card .info .discount { font-size: 70%; background-color:var(--primary); color:#fff; padding: 5px; border-radius: 5px}
+
+
+
+
+/* 1.8 posts */
+.posts { margin-top: 40px; margin-bottom: 40px}
+.posts .heading { background-color: var(--primary); color:#fff; padding: 15px; transform: skewx(10deg);}
+.posts .heading h2 {transform:skewx(-10deg)} 
+.posts .post-card { height:30vh; background-color:#fff; transition: all .2s ease-in-out;
+   flex-grow: 0;
+   flex-shrink: 0;
+   flex-basis: 25%;} /* hien thi 4 bai */
+.posts .post-card img {object-fit:cover;width:100%; height:55%} /* set height to hover zoom*/
+.posts .post-card:hover { margin-top: -10px} /* with animation above */
+.post-card .info {padding: 5px}
+.post-card .info h3 { font-size: 95%;}
+
+
+
+
+@media (max-width:480px){
+  .container {padding-left:10px; padding-right:10px; }
+  .sm-only {display:grid;}
+  .md-only {display:none;}
+  
+  /* nav {display:none;} */
+  
+  footer h3 {margin-top: 20px }
+  .footer-bottom { margin-bottom: 8vh}
+  
+  /* 1.4 bottom nav tav in mobile */
+  .navigationTab { height:8vh; width: 100%; position: fixed; bottom: 0px; background-color: transparent;}
+  .navigationTab .content {background-color:#fff; border-top-left-radius: 10px; border-top-right-radius: 10px;box-shadow: rgb(0 0 0 / 50%) 0px -10px 10px -10px;}
+  .navigationTab .content i {font-size: 240%}
+  .navigationTab .content div {text-align:center; font-size: 90%; padding: 5px} 
+  
+  
+  /* 1.6 Main category */
+  .main-category .item { margin-right: 40px; text-align:center; 
+   flex-grow: 0;
+   flex-shrink: 0;
+   flex-basis: 23.33%;} /* trick so le de hien thi che bot*/
+  
+  /* 1.7 product card */
+ 
+  /* 1.8 post card item horizotal */
+  .posts .post-card { height:auto; background-color:#fff; transition: all .2s ease-in-out; margin-bottom:10px} 
+  .posts .post-card img {object-fit:cover; width:33%; height:100%; padding: 10px} /* set height to hover zoom*/
+  .post-card .info {padding: 10px}
+  
+}
+
+
