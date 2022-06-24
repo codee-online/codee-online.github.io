@@ -35,6 +35,7 @@ header img.icon-lg {max-height:48px}
 header .cart-icon { position: relative; padding:10px;}
 header .cart-icon i {font-size: 240%}
 header .cart-count { position: absolute; top: 14px; right: 0px; background-color: red; color:#fff; padding: 2px; text-align:center; width:20px; border-radius: 10px; font-size: 10px}
+
 /* 1.2 nav */
 nav { text-transform: uppercase; letter-spacing: 1px; }
 nav .nav-item { padding-left:20px; padding-right:20px; padding-top: 5px; padding-bottom: 5px;}
